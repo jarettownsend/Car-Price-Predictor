@@ -1,6 +1,6 @@
 import streamlit as st
-import gzip
-import pickle
+import joblib
+import bz2
 from constants import (
     fuel_types, 
     conditions, 
@@ -13,8 +13,8 @@ from utils import preprocess_data, predict_prices
 
 @st.cache_data
 def load_model():
-    with gzip.open('car_price_model_complete.pkl.gz', 'rb') as file:
-        return pickle.load(file)
+    with bz2.BZ2File('car_price_model_complete.joblib.bz2', 'rb') as file:
+        return joblib.load(file)
 
 def main():
     """Main function to run the Streamlit app"""
