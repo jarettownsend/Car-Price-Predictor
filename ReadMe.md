@@ -8,7 +8,7 @@
 
 ## 🚀 Demo
 
-Try it live on **[Streamlit Cloud](https://carvaluepredictor.streamlit.app/)**  
+Try it live on **[Streamlit Cloud](https://car-price-predictor-jt.streamlit.app/)**  
 
 ---
 
